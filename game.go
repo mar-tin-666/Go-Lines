@@ -102,8 +102,6 @@ func (g *Game) Update() error {
 
 		// Check collision
 		if g.player1Pos == g.player2Pos {
-			fmt.Println(g.player1Pos)
-			fmt.Println(g.player2Pos)
 			g.noScore = true
 			g.winner = fmt.Sprint(drawMessageTemplate)
 			g.running = false
